@@ -7,7 +7,7 @@ Welcome to the RPG Game project repository! This project was developed as part o
 
 This project involves the creation of a basic RPG game using C++ and the SDL library. The game includes features such as a game menu, character selection, movement mechanics, and combat with attack and damage systems.
 
-## Screen Shots
+## Images
 <div align="left">
 
 ![alt text](image-1.png)
