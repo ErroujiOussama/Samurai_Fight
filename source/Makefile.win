@@ -1,0 +1,64 @@
+# Project: testeur
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = arrowbutton.o button.o charbackground.o collider.o hero.o hitbox.o hurtbox.o knight.o main.o player.o samurai.o window.o Sound.o
+LINKOBJ  = arrowbutton.o button.o charbackground.o collider.o hero.o hitbox.o hurtbox.o knight.o main.o player.o samurai.o window.o Sound.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -L"C:/Users/oussama/Desktop/jk/SDL2_image-devel-2.6.2-mingw/SDL2_image-2.6.2/x86_64-w64-mingw32/lib" -L"C:/Users/oussama/Desktop/jk/SDL2_mixer-2.6.2/x86_64-w64-mingw32/lib" -L"C:/Users/oussama/Desktop/jk/SDL2-devel-2.26.1-mingw/SDL2-2.26.1/x86_64-w64-mingw32/lib" -static-libgcc -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"C:/Users/oussama/Desktop/jk/SDL2_image-devel-2.6.2-mingw/SDL2_image-2.6.2/x86_64-w64-mingw32/include/SDL2" -I"C:/Users/oussama/Desktop/jk/SDL2_mixer-2.6.2/x86_64-w64-mingw32/include/SDL2" -I"C:/Users/oussama/Desktop/jk/SDL2-devel-2.26.1-mingw/SDL2-2.26.1/x86_64-w64-mingw32/include/SDL2"
+BIN      = testeur.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+arrowbutton.o: arrowbutton.cpp
+	$(CPP) -c arrowbutton.cpp -o arrowbutton.o $(CXXFLAGS)
+
+button.o: button.cpp
+	$(CPP) -c button.cpp -o button.o $(CXXFLAGS)
+
+charbackground.o: charbackground.cpp
+	$(CPP) -c charbackground.cpp -o charbackground.o $(CXXFLAGS)
+
+collider.o: collider.cpp
+	$(CPP) -c collider.cpp -o collider.o $(CXXFLAGS)
+
+hero.o: hero.cpp
+	$(CPP) -c hero.cpp -o hero.o $(CXXFLAGS)
+
+hitbox.o: hitbox.cpp
+	$(CPP) -c hitbox.cpp -o hitbox.o $(CXXFLAGS)
+
+hurtbox.o: hurtbox.cpp
+	$(CPP) -c hurtbox.cpp -o hurtbox.o $(CXXFLAGS)
+
+knight.o: knight.cpp
+	$(CPP) -c knight.cpp -o knight.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+player.o: player.cpp
+	$(CPP) -c player.cpp -o player.o $(CXXFLAGS)
+
+samurai.o: samurai.cpp
+	$(CPP) -c samurai.cpp -o samurai.o $(CXXFLAGS)
+
+window.o: window.cpp
+	$(CPP) -c window.cpp -o window.o $(CXXFLAGS)
+
+Sound.o: Sound.cpp
+	$(CPP) -c Sound.cpp -o Sound.o $(CXXFLAGS)
