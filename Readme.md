@@ -9,7 +9,9 @@ This project involves the creation of a basic RPG game using C++ and the SDL lib
 
 ## Images
 <div align="left">
+
 <iframe src="https://drive.google.com/file/d/14GZQ9ddEChWRAuJqyQUONSqygPDM6Kg9/preview" width="640" height="480" allow="autoplay"></iframe>
+
 ![alt text](image-1.png)
 ![alt text](image.png)
 ![alt text](image-2.png)
